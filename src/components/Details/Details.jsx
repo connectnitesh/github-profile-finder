@@ -19,7 +19,7 @@ function Details(props){
                     <p>{props.data.blog}</p>
                     <p>{props.data.email}</p>
                     <a href={props.data.followers_url} target="_blank" rel="noreferrer" >
-                      {props.data.followers}
+                      { props.data.followers}
                     </a>
                     <a href={props.data.following_url} target="_blank" rel="noreferrer" >
                       {props.data.following}
