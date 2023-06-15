@@ -20,7 +20,7 @@ function Profile(){
         const userData = await fetch(`https://api.github.com/users/${username}`);
         const userDataJson = await userData.json();
 
-        const reposData = await fetch(userDataJson.repos_url);
+        const reposData = await fetch(`https://api.github.com/users/${username}/repos?page=1&per_page=100`);
         const reposJson = await reposData.json();
 
         if(userDataJson){
@@ -35,7 +35,7 @@ function Profile(){
         <div className="profile">
             <div className="content">
                 <Input
-                onChange={handleChange} value={username}
+                onChange={handleChange}  value={username}
                 id="input-with-icon-adornment"
                 startAdornment={
                     <InputAdornment position="start">

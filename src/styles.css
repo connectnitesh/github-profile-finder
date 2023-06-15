@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&family=Roboto:wght@400;500;900&display=swap');
+
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    padding:20px;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+header .g-icon svg{
+  font-size: 1.9rem;
+  margin-right:10px;
+  margin-top:2px;
+}
+
+
+.profile .content{
+    padding-top:10px;
+    text-align: center;
+}
+
+.details{
+  min-height: 75vh;
+}
+
+.details .container{
+    display: flex;
+    padding:5px 20px;
+}
+
+.details .container .left-container{
+    padding:10px 20px;
+    justify-content: center;
+    text-align: center;
+    margin:20px;
+}
+
+.details .container .right-container{
+    padding:20px;
+    margin:40px 20px;
+    font-size: 1.2rem;
+    line-height: 36px;
+}
+
+.details .container .right-container a{
+    text-decoration: none;
+    color:#333;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.details .container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.details .container .left-container h3{
+    background-color: #1877f2;
+    color: #fff;
+    border-radius: 12px;
+    padding:2%;
+    margin-top:5px;
+}
+
+.repos{
+  margin:10px;
+}
+
+.repo-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.repo-header {
+  display: block;
+  background-color: #eaeaea;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+.repo-header:hover {
+  background-color: #d6d6d6;
+}
+
+
+
+footer{
+    color:#333;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    padding:5px;
+    margin-top:5px;
+    flex-shrink: 5px;
+}
+
+footer a{
+  color:#1877f2;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color:#114c98;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ------------------- Responsive -------------------- */
+
+@media screen and (max-width: 600px){
+    .details .container{
+        flex-direction: column;
+    }
+}
+
