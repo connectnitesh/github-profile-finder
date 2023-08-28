@@ -46,7 +46,7 @@ function Details(props) {
             " "
           ) : (
           <a
-            href={props.data.followers_url}
+            href={props.data.html_url}
             target="_blank"
             rel="noreferrer"
           >
@@ -57,7 +57,7 @@ function Details(props) {
             " "
           ) : (
             <a
-            href={props.data.following}
+            href={props.data.html_url}
             target="_blank"
             rel="noreferrer"
           > 
